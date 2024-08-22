@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="space">
+            <h2>Unete a Interpolo</h2>
+            <p><img alt="Cambiar imagen" height="100px" width="100px" onmouseout="this.src='https://i.pinimg.com/originals/46/5b/ac/465baca50ce17350b78b1cc648d838cc.png';" onmouseover="this.src='https://i.pinimg.com/736x/fd/1d/cb/fd1dcb83390f10a1f7e8578a9ae63e4f.jpg';" src="https://i.pinimg.com/originals/46/5b/ac/465baca50ce17350b78b1cc648d838cc.png" /></p>    
+        </div>
+        <form action="registro.php" method="POST">
+            <div class="form-group1">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group1 password-container">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+                <i class="bx bxs-hide toggle-password" onclick="togglePasswordVisibility()"></i>
+            </div>
+            <div class="noms">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidoP">Apellido Paterno</label>
+                    <input type="text" id="apellidoP" name="apellidoP" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidoM">Apellido Materno</label>
+                    <input type="text" id="apellidoM" name="apellidoM" required>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="numero">Teléfono</label>
+                    <input type="text" id="numero" name="numero" required>
+                </div>
+            </div>
+            <br>
+        <div class="form-group">
+            <button type="submit">Registrarse</button>
+        </div>
+        <script>
+            function togglePasswordVisibility() {
+                const passwordInput = document.getElementById('contraseña');
+                const icon = document.querySelector('.toggle-password');
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                icon.classList.toggle('bxs-hide');
+                icon.classList.toggle('bxs-show');
+            }
+        </script>
+    </form>
+    </div>
+</body>
+</html>

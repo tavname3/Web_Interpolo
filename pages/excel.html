@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="excel.css">
+<title>Exportar el contenido de una tabla a EXCEL</title>
+</head>
+<body>
+<h1>Usuario</h1>
+<div class="tablausuario">
+<table id="infousuario">
+<tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido Paterno</th>
+    <th>Apellido Materno</th>
+    <th>Numero</th>
+    <th>Correo</th>
+</tr>
+<tr>
+<td>1</td> 
+<td>Anyelin</td>
+<td>Vazquez</td>
+<td>Carreto</td>
+<td>2227356158</td>
+<td>anyelinvc@gmail.com</td>
+</tr>
+<tr>
+<td>datossss</td>
+<td>datossss </td>
+<td>datossss</td>
+<td>datossss </td>
+<td>datossss</td>
+</tr>
+</table>
+</div>
+<h1>Pedidos</h1>
+<div class="tablapedidos">
+<table id="infopedidos">
+    <tr>
+    <th>IDCliente</th>
+    <th>Nombre</th>
+    <th>Servicio </th>
+    <th>Total </th>
+</tr>
+<tr>
+<td>1</td> 
+<td>Anyelin</td>
+<td>Vazquez</td>
+<td>Carreto</td>
+</tr>
+</table>
+</div>
+<br>
+<center>
+<form action="exporta.php" method="post">
+<input type="submit" value="Obtener archivo en excel de Clientes">
+</form>
+</center>
+</body>
+</html>

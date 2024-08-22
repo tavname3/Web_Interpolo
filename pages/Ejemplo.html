@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Turno</title>
+    <link rel="stylesheet" href="arealogin.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <a href="../home.html"><img alt="Cambiar imagen" height="100px" width="100px" onmouseout="this.src='https://i.pinimg.com/originals/46/5b/ac/465baca50ce17350b78b1cc648d838cc.png';" onmouseover="this.src='https://i.pinimg.com/736x/fd/1d/cb/fd1dcb83390f10a1f7e8578a9ae63e4f.jpg';" src="https://i.pinimg.com/originals/46/5b/ac/465baca50ce17350b78b1cc648d838cc.png" /><a>
+            <ul><li>Bienvenido <?php echo $user; ?></li></ul>
+            <ul class="nav">
+                <li class="dropdown">Opciones
+                    <ul class="dropdown-content">  
+                        <li><a href="Consulta.html">Modificar mi información</a></li>
+                        <li><a href="Pedidos.html">Consultar mis pedidos</a></li>
+                    </ul>
+                </li>
+                <li><a href="logout.php">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+<p>Pedidos</p>
+<br></br>
+<div class="master-container">
+    <div class="card pedidos">
+        <label class="title">Cliente #IDCLIENTE
+        </label>
+        <label class="subtitle">Nombre de Cliente
+        </label>
+        <div class="details">
+        <span>CURP</span>
+        <span>47.99$</span>
+        <span>coca</span>
+        <span>4.99$</span>
+        <span>LICENCIA</span>
+        <span>47.99$</span>
+        </div>
+    </div>
+    <div class="card checkout">
+        <div class="checkout--footer">
+        <label class="price"><sup>$</sup>57.99</label>
+    </div>
+</div>
+</body>
+</html>

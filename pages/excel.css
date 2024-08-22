@@ -1,0 +1,65 @@
+body{
+    background-color: #fdfdfd;
+}
+
+#infousuario {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#infousuario td, #infousuario th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#infousuario tr:nth-child(even){background-color: #f2f2f2;}
+#infousuario tr:hover {background-color: #ddd;}
+
+#infousuario th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #7a78fd;
+    color: white;
+}
+
+/*Tabla de pedidos*/
+#infopedidos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#infopedidos td, #infopedidos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#infopedidos tr:nth-child(even){background-color: #f2f2f2;}
+
+#infopedidos tr:hover {background-color: #ddd;}
+
+#infopedidos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #7a78fd;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #7a78fd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+align-content: center;
+}
+
+input[type=submit]:hover {
+background-color: #7a78fd;
+}
